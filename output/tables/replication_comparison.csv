@@ -1,0 +1,111 @@
+unit,outcome,variable,model,h,target,target_sig,median,p16,p84,sig
+Philippines,real GDP (cumulated growth),y,"VECMX*(2,1) r=2",0,0.06,none,0.088,-0.011,0.189,none
+Philippines,real GDP (cumulated growth),y,"levels VARX*(2,1)",0,0.06,none,0.074,-0.033,0.188,none
+Philippines,real GDP (cumulated growth),y,"VECMX*(2,1) r=2",1,0.09,none,0.015,-0.087,0.122,none
+Philippines,real GDP (cumulated growth),y,"levels VARX*(2,1)",1,0.09,none,0.023,-0.121,0.177,none
+Philippines,real GDP (cumulated growth),y,"VECMX*(2,1) r=2",2,0.11,none,0.024,-0.099,0.144,none
+Philippines,real GDP (cumulated growth),y,"levels VARX*(2,1)",2,0.11,none,-0.008,-0.189,0.189,none
+Philippines,real GDP (cumulated growth),y,"VECMX*(2,1) r=2",3,0.17,none,0.024,-0.106,0.155,none
+Philippines,real GDP (cumulated growth),y,"levels VARX*(2,1)",3,0.17,none,-0.05,-0.256,0.17,none
+Philippines,real GDP (cumulated growth),y,"VECMX*(2,1) r=2",4,0.21,none,0.035,-0.105,0.188,none
+Philippines,real GDP (cumulated growth),y,"levels VARX*(2,1)",4,0.21,none,-0.107,-0.343,0.138,none
+Philippines,inflation,Dp,"VECMX*(2,1) r=2",0,0.11,none,0.001,-0.103,0.098,none
+Philippines,inflation,Dp,"levels VARX*(2,1)",0,0.11,none,0.009,-0.1,0.114,none
+Philippines,inflation,Dp_cumsum,"VECMX*(2,1) r=2",0,0.11,none,0.001,-0.103,0.098,none
+Philippines,inflation,Dp_cumsum,"levels VARX*(2,1)",0,0.11,none,0.009,-0.1,0.114,none
+Philippines,inflation,Dp,"VECMX*(2,1) r=2",1,0.06,none,0.025,-0.078,0.127,none
+Philippines,inflation,Dp,"levels VARX*(2,1)",1,0.06,none,-0.001,-0.152,0.129,none
+Philippines,inflation,Dp_cumsum,"VECMX*(2,1) r=2",1,0.06,none,0.017,-0.135,0.192,none
+Philippines,inflation,Dp_cumsum,"levels VARX*(2,1)",1,0.06,none,0.012,-0.207,0.193,none
+Philippines,inflation,Dp,"VECMX*(2,1) r=2",2,0.19,16-84%,0.035,-0.055,0.124,none
+Philippines,inflation,Dp,"levels VARX*(2,1)",2,0.19,16-84%,0.08,-0.058,0.213,none
+Philippines,inflation,Dp_cumsum,"VECMX*(2,1) r=2",2,0.19,16-84%,0.053,-0.166,0.301,none
+Philippines,inflation,Dp_cumsum,"levels VARX*(2,1)",2,0.19,16-84%,0.083,-0.252,0.386,none
+Philippines,inflation,Dp,"VECMX*(2,1) r=2",3,0.22,none,0.014,-0.082,0.104,none
+Philippines,inflation,Dp,"levels VARX*(2,1)",3,0.22,none,0.069,-0.066,0.207,none
+Philippines,inflation,Dp_cumsum,"VECMX*(2,1) r=2",3,0.22,none,0.067,-0.233,0.381,none
+Philippines,inflation,Dp_cumsum,"levels VARX*(2,1)",3,0.22,none,0.17,-0.297,0.569,none
+Philippines,inflation,Dp,"VECMX*(2,1) r=2",4,0.27,none,0.011,-0.075,0.093,none
+Philippines,inflation,Dp,"levels VARX*(2,1)",4,0.27,none,0.119,-0.006,0.238,none
+Philippines,inflation,Dp_cumsum,"VECMX*(2,1) r=2",4,0.27,none,0.08,-0.291,0.451,none
+Philippines,inflation,Dp_cumsum,"levels VARX*(2,1)",4,0.27,none,0.273,-0.251,0.778,none
+Indonesia,real GDP (cumulated growth),y,"VECMX*(2,1) r=3",0,-0.35,5-95%,-0.535,-0.784,-0.327,5-95%
+Indonesia,real GDP (cumulated growth),y,"levels VARX*(2,1)",0,-0.35,5-95%,-0.537,-0.785,-0.315,5-95%
+Indonesia,real GDP (cumulated growth),y,"VECMX*(2,1) r=3",1,-0.61,16-84%,-0.328,-0.565,-0.132,5-95%
+Indonesia,real GDP (cumulated growth),y,"levels VARX*(2,1)",1,-0.61,16-84%,-0.464,-0.712,-0.232,5-95%
+Indonesia,real GDP (cumulated growth),y,"VECMX*(2,1) r=3",2,-0.91,16-84%,-0.484,-0.73,-0.262,5-95%
+Indonesia,real GDP (cumulated growth),y,"levels VARX*(2,1)",2,-0.91,16-84%,-0.72,-0.997,-0.452,5-95%
+Indonesia,real GDP (cumulated growth),y,"VECMX*(2,1) r=3",3,-1.02,none,-0.289,-0.553,-0.061,16-84%
+Indonesia,real GDP (cumulated growth),y,"levels VARX*(2,1)",3,-1.02,none,-0.668,-0.982,-0.347,5-95%
+Indonesia,real GDP (cumulated growth),y,"VECMX*(2,1) r=3",4,-1.01,none,-0.144,-0.42,0.08,none
+Indonesia,real GDP (cumulated growth),y,"levels VARX*(2,1)",4,-1.01,none,-0.636,-0.993,-0.291,5-95%
+Indonesia,inflation,Dp,"VECMX*(2,1) r=3",0,0.25,16-84%,-0.02,-0.224,0.205,none
+Indonesia,inflation,Dp,"levels VARX*(2,1)",0,0.25,16-84%,-0.018,-0.215,0.211,none
+Indonesia,inflation,Dp_cumsum,"VECMX*(2,1) r=3",0,0.25,16-84%,-0.02,-0.224,0.205,none
+Indonesia,inflation,Dp_cumsum,"levels VARX*(2,1)",0,0.25,16-84%,-0.018,-0.215,0.211,none
+Indonesia,inflation,Dp,"VECMX*(2,1) r=3",1,0.61,5-95%,0.549,0.366,0.766,5-95%
+Indonesia,inflation,Dp,"levels VARX*(2,1)",1,0.61,5-95%,0.617,0.432,0.846,5-95%
+Indonesia,inflation,Dp_cumsum,"VECMX*(2,1) r=3",1,0.61,5-95%,0.535,0.178,0.926,16-84%
+Indonesia,inflation,Dp_cumsum,"levels VARX*(2,1)",1,0.61,5-95%,0.604,0.25,1.01,5-95%
+Indonesia,inflation,Dp,"VECMX*(2,1) r=3",2,0.87,16-84%,0.459,0.301,0.634,5-95%
+Indonesia,inflation,Dp,"levels VARX*(2,1)",2,0.87,16-84%,0.574,0.394,0.765,5-95%
+Indonesia,inflation,Dp_cumsum,"VECMX*(2,1) r=3",2,0.87,16-84%,0.983,0.541,1.511,5-95%
+Indonesia,inflation,Dp_cumsum,"levels VARX*(2,1)",2,0.87,16-84%,1.165,0.682,1.723,5-95%
+Indonesia,inflation,Dp,"VECMX*(2,1) r=3",3,0.95,none,0.314,0.177,0.46,5-95%
+Indonesia,inflation,Dp,"levels VARX*(2,1)",3,0.95,none,0.458,0.297,0.626,5-95%
+Indonesia,inflation,Dp_cumsum,"VECMX*(2,1) r=3",3,0.95,none,1.298,0.776,1.92,5-95%
+Indonesia,inflation,Dp_cumsum,"levels VARX*(2,1)",3,0.95,none,1.622,1.066,2.282,5-95%
+Indonesia,inflation,Dp,"VECMX*(2,1) r=3",4,0.91,none,0.131,0.007,0.258,16-84%
+Indonesia,inflation,Dp,"levels VARX*(2,1)",4,0.91,none,0.288,0.143,0.442,5-95%
+Indonesia,inflation,Dp_cumsum,"VECMX*(2,1) r=3",4,0.91,none,1.434,0.861,2.086,5-95%
+Indonesia,inflation,Dp_cumsum,"levels VARX*(2,1)",4,0.91,none,1.916,1.259,2.689,5-95%
+Thailand,real GDP (cumulated growth),y,"VECMX*(1,1) r=1",0,0.47,5-95%,0.304,0.101,0.484,16-84%
+Thailand,real GDP (cumulated growth),y,"levels VARX*(1,1)",0,0.47,5-95%,0.223,0.05,0.41,16-84%
+Thailand,real GDP (cumulated growth),y,"VECMX*(1,1) r=1",1,0.78,5-95%,0.238,0.029,0.433,16-84%
+Thailand,real GDP (cumulated growth),y,"levels VARX*(1,1)",1,0.78,5-95%,0.104,-0.103,0.326,none
+Thailand,real GDP (cumulated growth),y,"VECMX*(1,1) r=1",2,1.11,5-95%,0.211,-0.02,0.444,none
+Thailand,real GDP (cumulated growth),y,"levels VARX*(1,1)",2,1.11,5-95%,0.073,-0.187,0.34,none
+Thailand,real GDP (cumulated growth),y,"VECMX*(1,1) r=1",3,1.49,5-95%,0.195,-0.044,0.464,none
+Thailand,real GDP (cumulated growth),y,"levels VARX*(1,1)",3,1.49,5-95%,0.065,-0.218,0.378,none
+Thailand,real GDP (cumulated growth),y,"VECMX*(1,1) r=1",4,1.81,5-95%,0.188,-0.06,0.473,none
+Thailand,real GDP (cumulated growth),y,"levels VARX*(1,1)",4,1.81,5-95%,0.082,-0.249,0.417,none
+Thailand,inflation,Dp,"VECMX*(1,1) r=1",0,0.01,none,0.026,-0.054,0.107,none
+Thailand,inflation,Dp,"levels VARX*(1,1)",0,0.01,none,0.023,-0.05,0.099,none
+Thailand,inflation,Dp_cumsum,"VECMX*(1,1) r=1",0,0.01,none,0.026,-0.054,0.107,none
+Thailand,inflation,Dp_cumsum,"levels VARX*(1,1)",0,0.01,none,0.023,-0.05,0.099,none
+Thailand,inflation,Dp,"VECMX*(1,1) r=1",1,0.21,5-95%,0.087,0.012,0.166,16-84%
+Thailand,inflation,Dp,"levels VARX*(1,1)",1,0.21,5-95%,0.101,0.03,0.172,16-84%
+Thailand,inflation,Dp_cumsum,"VECMX*(1,1) r=1",1,0.21,5-95%,0.11,-0.019,0.247,none
+Thailand,inflation,Dp_cumsum,"levels VARX*(1,1)",1,0.21,5-95%,0.122,0.011,0.245,16-84%
+Thailand,inflation,Dp,"VECMX*(1,1) r=1",2,0.35,5-95%,0.051,-0.013,0.124,none
+Thailand,inflation,Dp,"levels VARX*(1,1)",2,0.35,5-95%,0.084,0.02,0.147,16-84%
+Thailand,inflation,Dp_cumsum,"VECMX*(1,1) r=1",2,0.35,5-95%,0.162,-0.015,0.368,none
+Thailand,inflation,Dp_cumsum,"levels VARX*(1,1)",2,0.35,5-95%,0.201,0.047,0.384,16-84%
+Thailand,inflation,Dp,"VECMX*(1,1) r=1",3,0.46,5-95%,0.039,-0.019,0.104,none
+Thailand,inflation,Dp,"levels VARX*(1,1)",3,0.46,5-95%,0.072,0.015,0.133,16-84%
+Thailand,inflation,Dp_cumsum,"VECMX*(1,1) r=1",3,0.46,5-95%,0.198,-0.024,0.464,none
+Thailand,inflation,Dp_cumsum,"levels VARX*(1,1)",3,0.46,5-95%,0.273,0.077,0.506,16-84%
+Thailand,inflation,Dp,"VECMX*(1,1) r=1",4,0.55,5-95%,0.036,-0.02,0.1,none
+Thailand,inflation,Dp,"levels VARX*(1,1)",4,0.55,5-95%,0.066,0.015,0.125,16-84%
+Thailand,inflation,Dp_cumsum,"VECMX*(1,1) r=1",4,0.55,5-95%,0.234,-0.037,0.55,none
+Thailand,inflation,Dp_cumsum,"levels VARX*(1,1)",4,0.55,5-95%,0.341,0.098,0.618,16-84%
+Global,real oil price,poil,"VECMX*(2,1) r=2",0,1.2,16-84%,1.801,0.712,2.981,16-84%
+Global,real oil price,poil,"levels VARX*(2,1)",0,1.2,16-84%,1.801,0.712,2.981,16-84%
+Global,real oil price,poil,"VECMX*(2,1) r=2",1,4.23,16-84%,0.72,-0.942,2.561,none
+Global,real oil price,poil,"levels VARX*(2,1)",1,4.23,16-84%,0.72,-0.942,2.561,none
+Global,real oil price,poil,"VECMX*(2,1) r=2",2,7.8,5-95%,-0.774,-2.793,1.604,none
+Global,real oil price,poil,"levels VARX*(2,1)",2,7.8,5-95%,-0.774,-2.793,1.604,none
+Global,real oil price,poil,"VECMX*(2,1) r=2",3,11.09,5-95%,-1.37,-3.618,1.058,none
+Global,real oil price,poil,"levels VARX*(2,1)",3,11.09,5-95%,-1.37,-3.618,1.058,none
+Global,real oil price,poil,"VECMX*(2,1) r=2",4,13.87,5-95%,-1.501,-3.784,0.733,none
+Global,real oil price,poil,"levels VARX*(2,1)",4,13.87,5-95%,-1.501,-3.784,0.733,none
+Global,real non-fuel commodity prices,pnf,"VECMX*(2,1) r=2",0,0.42,none,-0.062,-0.48,0.399,none
+Global,real non-fuel commodity prices,pnf,"levels VARX*(2,1)",0,0.42,none,-0.062,-0.48,0.399,none
+Global,real non-fuel commodity prices,pnf,"VECMX*(2,1) r=2",1,0.77,none,0.263,-0.431,1.019,none
+Global,real non-fuel commodity prices,pnf,"levels VARX*(2,1)",1,0.77,none,0.263,-0.431,1.019,none
+Global,real non-fuel commodity prices,pnf,"VECMX*(2,1) r=2",2,1.97,5-95%,0.582,-0.372,1.542,none
+Global,real non-fuel commodity prices,pnf,"levels VARX*(2,1)",2,1.97,5-95%,0.582,-0.372,1.542,none
+Global,real non-fuel commodity prices,pnf,"VECMX*(2,1) r=2",3,3.75,5-95%,0.785,-0.329,1.912,none
+Global,real non-fuel commodity prices,pnf,"levels VARX*(2,1)",3,3.75,5-95%,0.785,-0.329,1.912,none
+Global,real non-fuel commodity prices,pnf,"VECMX*(2,1) r=2",4,5.31,5-95%,0.907,-0.316,2.111,none
+Global,real non-fuel commodity prices,pnf,"levels VARX*(2,1)",4,5.31,5-95%,0.907,-0.316,2.111,none

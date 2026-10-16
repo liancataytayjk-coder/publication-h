@@ -1,0 +1,8 @@
+id,criterion,target,estimate,passed
+G1a,PH GDP: 16-84% band contains 0 at h=0..4,not significant,"h0:[-0.01,0.19]; h1:[-0.09,0.12]; h2:[-0.10,0.14]; h3:[-0.11,0.15]; h4:[-0.11,0.19]",PASS
+G1b,"PH GDP median h=4 in [-0.29, 0.71]",0.21,0.035,PASS
+G2a,PH inflation median h=0 > 0,0.11,0.001,PASS
+G2b,"PH inflation median h=4 in [0.02, 0.52]",0.27,0.011,FAIL
+G3a,IDN GDP median h=4 < 0 and 16-84% band excludes 0,-1.01,"-0.144 [-0.42,0.08]",FAIL
+G3b,IDN inflation median h=4 > 0,0.91,0.131,PASS
+G4,real oil and non-fuel medians h=4 > 0,13.87; 5.31,-1.50; 0.91,FAIL

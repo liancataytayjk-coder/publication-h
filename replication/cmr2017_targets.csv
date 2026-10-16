@@ -1,17 +1,41 @@
-source,sample,outcome,shock,h,beta,se,note
-CMR2015WP Table 3,1979Q2-2013Q1,real GDP (cumulated growth; pct),-1 s.d. SOI anomaly,0,0.06,,Philippines; h=0 is impact; reported not significant (text p.18); check JIE 2017 version
-CMR2015WP Table 3,1979Q2-2013Q1,real GDP (cumulated growth; pct),-1 s.d. SOI anomaly,1,0.09,,Philippines
-CMR2015WP Table 3,1979Q2-2013Q1,real GDP (cumulated growth; pct),-1 s.d. SOI anomaly,2,0.11,,Philippines
-CMR2015WP Table 3,1979Q2-2013Q1,real GDP (cumulated growth; pct),-1 s.d. SOI anomaly,3,0.17,,Philippines
-CMR2015WP Table 3,1979Q2-2013Q1,real GDP (cumulated growth; pct),-1 s.d. SOI anomaly,4,0.21,,Philippines
-CMR2015WP Table 7,1979Q2-2013Q1,inflation (cumulated; pp),-1 s.d. SOI anomaly,0,0.11,,Philippines; significance stars lost in text extraction; read from PDF
-CMR2015WP Table 7,1979Q2-2013Q1,inflation (cumulated; pp),-1 s.d. SOI anomaly,1,0.06,,Philippines
-CMR2015WP Table 7,1979Q2-2013Q1,inflation (cumulated; pp),-1 s.d. SOI anomaly,2,0.19,,Philippines
-CMR2015WP Table 7,1979Q2-2013Q1,inflation (cumulated; pp),-1 s.d. SOI anomaly,3,0.22,,Philippines
-CMR2015WP Table 7,1979Q2-2013Q1,inflation (cumulated; pp),-1 s.d. SOI anomaly,4,0.27,,Philippines; text p.24 quotes 0.19 with food weight 39
-CMR2015WP Table 3,1979Q2-2013Q1,real GDP (cumulated growth; pct),-1 s.d. SOI anomaly,4,-1.01,,Indonesia cross-check (significant negative)
-CMR2015WP Table 7,1979Q2-2013Q1,inflation (cumulated; pp),-1 s.d. SOI anomaly,4,0.91,,Indonesia cross-check
-CMR2015WP Table 3,1979Q2-2013Q1,real GDP (cumulated growth; pct),-1 s.d. SOI anomaly,4,1.81,,Thailand cross-check
-CMR2015WP Table 7,1979Q2-2013Q1,inflation (cumulated; pp),-1 s.d. SOI anomaly,4,0.55,,Thailand cross-check
-CMR2015WP Table 6,1979Q2-2013Q1,real non-fuel commodity prices (cumulated; pct),-1 s.d. SOI anomaly,4,5.31,,global block
-CMR2015WP Table 6,1979Q2-2013Q1,real oil price (cumulated; pct),-1 s.d. SOI anomaly,4,13.87,,global block
+source,sample,unit,outcome,shock,h,beta,sig,note
+CMR2015WP Table 3,1979Q2-2013Q1,Philippines,real GDP (cumulated growth),-1 s.e. SOI anomaly,0,0.06,none,pct
+CMR2015WP Table 3,1979Q2-2013Q1,Philippines,real GDP (cumulated growth),-1 s.e. SOI anomaly,1,0.09,none,pct
+CMR2015WP Table 3,1979Q2-2013Q1,Philippines,real GDP (cumulated growth),-1 s.e. SOI anomaly,2,0.11,none,pct
+CMR2015WP Table 3,1979Q2-2013Q1,Philippines,real GDP (cumulated growth),-1 s.e. SOI anomaly,3,0.17,none,pct
+CMR2015WP Table 3,1979Q2-2013Q1,Philippines,real GDP (cumulated growth),-1 s.e. SOI anomaly,4,0.21,none,pct
+CMR2015WP Table 7,1979Q2-2013Q1,Philippines,inflation,-1 s.e. SOI anomaly,0,0.11,none,pp; 'cumulated' label
+CMR2015WP Table 7,1979Q2-2013Q1,Philippines,inflation,-1 s.e. SOI anomaly,1,0.06,none,pp; 'cumulated' label
+CMR2015WP Table 7,1979Q2-2013Q1,Philippines,inflation,-1 s.e. SOI anomaly,2,0.19,16-84%,pp; 'cumulated' label
+CMR2015WP Table 7,1979Q2-2013Q1,Philippines,inflation,-1 s.e. SOI anomaly,3,0.22,none,pp; 'cumulated' label
+CMR2015WP Table 7,1979Q2-2013Q1,Philippines,inflation,-1 s.e. SOI anomaly,4,0.27,none,pp; 'cumulated' label
+CMR2015WP Table 3,1979Q2-2013Q1,Indonesia,real GDP (cumulated growth),-1 s.e. SOI anomaly,0,-0.35,5-95%,pct
+CMR2015WP Table 3,1979Q2-2013Q1,Indonesia,real GDP (cumulated growth),-1 s.e. SOI anomaly,1,-0.61,16-84%,pct
+CMR2015WP Table 3,1979Q2-2013Q1,Indonesia,real GDP (cumulated growth),-1 s.e. SOI anomaly,2,-0.91,16-84%,pct
+CMR2015WP Table 3,1979Q2-2013Q1,Indonesia,real GDP (cumulated growth),-1 s.e. SOI anomaly,3,-1.02,none,pct
+CMR2015WP Table 3,1979Q2-2013Q1,Indonesia,real GDP (cumulated growth),-1 s.e. SOI anomaly,4,-1.01,none,pct
+CMR2015WP Table 7,1979Q2-2013Q1,Indonesia,inflation,-1 s.e. SOI anomaly,0,0.25,16-84%,pp
+CMR2015WP Table 7,1979Q2-2013Q1,Indonesia,inflation,-1 s.e. SOI anomaly,1,0.61,5-95%,pp
+CMR2015WP Table 7,1979Q2-2013Q1,Indonesia,inflation,-1 s.e. SOI anomaly,2,0.87,16-84%,pp
+CMR2015WP Table 7,1979Q2-2013Q1,Indonesia,inflation,-1 s.e. SOI anomaly,3,0.95,none,pp
+CMR2015WP Table 7,1979Q2-2013Q1,Indonesia,inflation,-1 s.e. SOI anomaly,4,0.91,none,pp
+CMR2015WP Table 3,1979Q2-2013Q1,Thailand,real GDP (cumulated growth),-1 s.e. SOI anomaly,0,0.47,5-95%,pct
+CMR2015WP Table 3,1979Q2-2013Q1,Thailand,real GDP (cumulated growth),-1 s.e. SOI anomaly,1,0.78,5-95%,pct
+CMR2015WP Table 3,1979Q2-2013Q1,Thailand,real GDP (cumulated growth),-1 s.e. SOI anomaly,2,1.11,5-95%,pct
+CMR2015WP Table 3,1979Q2-2013Q1,Thailand,real GDP (cumulated growth),-1 s.e. SOI anomaly,3,1.49,5-95%,pct
+CMR2015WP Table 3,1979Q2-2013Q1,Thailand,real GDP (cumulated growth),-1 s.e. SOI anomaly,4,1.81,5-95%,pct
+CMR2015WP Table 7,1979Q2-2013Q1,Thailand,inflation,-1 s.e. SOI anomaly,0,0.01,none,pp
+CMR2015WP Table 7,1979Q2-2013Q1,Thailand,inflation,-1 s.e. SOI anomaly,1,0.21,5-95%,pp
+CMR2015WP Table 7,1979Q2-2013Q1,Thailand,inflation,-1 s.e. SOI anomaly,2,0.35,5-95%,pp
+CMR2015WP Table 7,1979Q2-2013Q1,Thailand,inflation,-1 s.e. SOI anomaly,3,0.46,5-95%,pp
+CMR2015WP Table 7,1979Q2-2013Q1,Thailand,inflation,-1 s.e. SOI anomaly,4,0.55,5-95%,pp
+CMR2015WP Table 6,1979Q2-2013Q1,Global,real oil price,-1 s.e. SOI anomaly,0,1.2,16-84%,pct
+CMR2015WP Table 6,1979Q2-2013Q1,Global,real oil price,-1 s.e. SOI anomaly,1,4.23,16-84%,pct
+CMR2015WP Table 6,1979Q2-2013Q1,Global,real oil price,-1 s.e. SOI anomaly,2,7.8,5-95%,pct
+CMR2015WP Table 6,1979Q2-2013Q1,Global,real oil price,-1 s.e. SOI anomaly,3,11.09,5-95%,pct
+CMR2015WP Table 6,1979Q2-2013Q1,Global,real oil price,-1 s.e. SOI anomaly,4,13.87,5-95%,pct
+CMR2015WP Table 6,1979Q2-2013Q1,Global,real non-fuel commodity prices,-1 s.e. SOI anomaly,0,0.42,none,pct
+CMR2015WP Table 6,1979Q2-2013Q1,Global,real non-fuel commodity prices,-1 s.e. SOI anomaly,1,0.77,none,pct
+CMR2015WP Table 6,1979Q2-2013Q1,Global,real non-fuel commodity prices,-1 s.e. SOI anomaly,2,1.97,5-95%,pct
+CMR2015WP Table 6,1979Q2-2013Q1,Global,real non-fuel commodity prices,-1 s.e. SOI anomaly,3,3.75,5-95%,pct
+CMR2015WP Table 6,1979Q2-2013Q1,Global,real non-fuel commodity prices,-1 s.e. SOI anomaly,4,5.31,5-95%,pct
