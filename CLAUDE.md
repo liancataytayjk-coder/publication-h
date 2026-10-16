@@ -1,6 +1,6 @@
 # Fair Weather or Foul for the Philippines? — project brief
 
-**Status: Phase 1 (research), draft of 2026-10-16. The reference paper is proposed and waiting for the user's approval. No data downloaded, no estimates run.**
+**Status (2026-10-16): Phases 1–2 done; Phase 3 replication gate pre-registered below. Scope set by the user: Philippine model only first (D2).**
 
 This study asks what happens to the Philippine economy during an El Niño, and what the 2026–27 super El Niño is likely to do to output, inflation, interest rates and the peso. It replicates the Global Vector Autoregression (GVAR) design of Cashin, Mohaddes and Raissi (2017, *Journal of International Economics* 106: 37–54; working paper IMF WP/15/89), which estimates how an El Niño shock moves real GDP, inflation, interest rates, the exchange rate and world commodity prices in 33 economies, the Philippines among them. The study then extends that design with Philippine data to 2026, adds the sector, regional and policy detail the reference paper lacks, and turns the estimates into a dated, pre-registered scenario for 2026–27 with policy implications for the Bangko Sentral ng Pilipinas (BSP) and the national government.
 
@@ -63,19 +63,35 @@ Companion references:
 
 | # | Date | Decision | Evidence / reason |
 | --- | --- | --- | --- |
-| D1 | 2026-10-16 | Proposed reference paper: Cashin, Mohaddes and Raissi (2017). **Awaiting user approval.** | Macro scope matches the RQ; the Philippines is in the sample with published coefficients; public GVAR data; exogenous shock. Alternatives considered: Callahan and Mankin (2023), which is annual growth only with no inflation or policy block; Armas et al. (2024), which uses a temperature shock and is a discussion paper; Smith and Ubilava (2017), a cross-country panel without Philippine-specific results. |
+| D1 | 2026-10-16 | Reference paper: Cashin, Mohaddes and Raissi (2017, JIE; IMF WP/15/89). **Approved by the user** ("Philippine model only first"). Pre-registered. | Macro scope matches the RQ; the Philippines is in the sample with published coefficients; public data; exogenous shock. Alternatives considered: Callahan and Mankin (2023), Armas et al. (2024), Smith and Ubilava (2017). |
+| D2 | 2026-10-16 | **Philippine-only model**, not the 33-country GVAR (user's instruction). The rest of the world is a *foreign block*: the Philippines' trade-weighted foreign variables plus world oil and non-fuel prices, modelled as a VARX that responds to El Niño but not to Philippine shocks (block exogeneity). Pre-registered. | The Philippines is a small open economy, so its feedback on the world is negligible. In the full GVAR, x\* responds to El Niño through other countries' models; here a reduced-form foreign block carries that response. This is an approximation and the gate tests it. |
+| D3 | 2026-10-16 | Data: **GVAR 2013 Vintage** (1979Q1–2013Q1) for the replication, the vintage CMR used; **2023 Vintage** (Mohaddes and Raissi 2024) for the update. Pre-registered. | CMR p. 15 cite the GVAR website and Smith and Galesi (2014); the 2013 Vintage is the one shipped with GVAR Toolbox 2.0. |
+| D4 | 2026-10-16 | Transformations as in the GVAR Toolbox: y = ln RGDP; Dp = Δln CPI (quarterly); eq = ln(EQ/CPI); ep = ln(E) − ln(CPI); r = 0.25 ln(1+R/100). The Philippines has no long rate, so 5 domestic variables. Pre-registered. | Rebuilt series are **identical** to the 2023 Vintage's own Philippine series over 1979Q3–2013Q1 (correlation 1.0000, mean abs. diff. 0; `output/tables/data_checks.csv`). |
+| D5 | 2026-10-16 | Non-fuel commodity price = **World Bank Pink Sheet non-energy index** (quarterly mean) deflated by the US CPI; real oil = GVAR Brent (USD) / US CPI. Both enter the home model as weakly exogenous global variables. Pre-registered. | CMR use the IMF non-fuel index, which in the current IMF release starts only in 1992. Over 1992Q2–2013Q1 the quarterly log changes of the two correlate at **0.92** (0.91 to 2026). CMR's text does not state how commodity prices enter country models; weak exogeneity is the GVAR convention for global variables. |
+| D6 | 2026-10-16 | Foreign variables: trade weights averaged over 2009–2011 (CMR eq. 3), 20 partner units with one Europe region of 13 countries aggregated by 2009–2011 PPP-GDP weights (CMR p. 13). Where a partner lacks a variable, weights are renormalised over partners that have it. Coverage of the Philippines' trade: y\*, Dp\* 100%; r\* 97%; eq\* 80%; lr\* 55%. Pre-registered. | Largest Philippine partners: Japan 0.175, USA 0.157, China 0.130, Singapore 0.122, Europe 0.119 (`output/tables/trade_weights_2013v.json`). Rebuilt Δy\*, Dp\*, Δeq\*, Δr\*, Δlr\* correlate 0.985–0.999 with the 2023 Vintage's own star series, which use other weights. |
+| D7 | 2026-10-16 | El Niño measure: NOAA CPC SOI ("anomaly" block), quarterly mean of monthly values; AR(1) marginal model; shock = **−1 standard error** of the AR(1) residual. Pre-registered. | CMR pp. 7, 16–17. The IRF is invariant to rescaling the SOI, so the anomaly and standardised blocks (correlation 0.9998) give the same result. SOI and ONI correlate at −0.84 (1979–2023). |
+| D8 | 2026-10-16 | Home block: **VECMX\*(2,1) with r = 2** cointegrating relations, unrestricted intercept and restricted trend (case IV), estimated by reduced-rank regression; this is CMR Table 2 for the Philippines. Secondary: unrestricted levels VARX\*(2,1) with trend. Foreign block: levels VARX(p_f) with trend and SOI_t, SOI_{t−1}; p_f chosen by AIC with maximum 2 (CMR's rule). Pre-registered. | Simulation tests (`tests/test_varx.py`) show the estimator recovers known IRFs and the long-run matrix, and that the full-rank VECM equals the levels VARX. |
+| D9 | 2026-10-16 | Reported statistics: **bootstrap median** IRF from 1,000 recursive residual-bootstrap replications (all blocks re-estimated each time), with 5–95% and 16–84% bands, as in CMR. GDP: response of 100·y at quarter h (= cumulated growth, Table 3). Inflation: response of 100·Dp at quarter h (primary reading of Table 7; the GVAR Toolbox reports Dp itself, and CMR's text speaks of inflation "in the fourth quarter"); the running sum is reported as secondary. Pre-registered. | Table 7's label "cumulated" is ambiguous for inflation. The primary reading is fixed now, before results. |
+| D10 | 2026-10-16 | Estimation window: data 1979Q2–2013Q1 (Dp starts 1979Q2); first usable observation after two lags is 1979Q4. Pre-registered. | CMR p. 15. |
 
-## Replication gate (to be pre-registered before any estimate)
+## Replication gate (pre-registered 2026-10-16, before any estimate on real data)
 
-- **G1:** reproduce the Philippine cumulative GDP and inflation responses (Tables 3 and 7) on the GVAR data, 1979Q2–2013Q1. The pass band is to be fixed after reading the JIE tables and bootstrap settings.
-- **G2:** reproduce the sign pattern of the cross-checks: Indonesia GDP negative and significant, Thailand GDP positive, oil and non-fuel prices rising.
-- **G3:** decide whether a full 33-country GVAR is needed. A Philippine VARX\* with foreign variables treated as given is a cheaper approximation.
+Targets: `replication/cmr2017_targets.csv` (IMF WP/15/89 Tables 3, 6, 7). Model and data: D2–D10. Script: `scripts/04_replicate.py` → `output/tables/replication_gate.csv`.
+
+- **G1, Philippine GDP (Table 3; target +0.21 at h = 4, not significant).** (a) The 16–84% band contains zero at every h = 0…4; and (b) the bootstrap median at h = 4 lies in [−0.29, 0.71] (target ± 0.5).
+- **G2, Philippine inflation (Table 7; target +0.27 at h = 4, +0.11 on impact).** (a) The median at h = 0 is positive; and (b) the median at h = 4 lies in [0.02, 0.52] (target ± 0.25 pp).
+- **G3, method cross-check on Indonesia (same code; VECMX\*(2,1), r = 3 per Table 2; Indonesia has no equity series).** (a) The GDP median at h = 4 is negative and its 16–84% band excludes zero (target −1.01, significant); and (b) the inflation median at h = 4 is positive (target +0.91).
+- **G4, commodity prices in the Philippine system (Table 6).** The medians of real oil and real non-fuel prices at h = 4 are both positive (targets +13.87% and +5.31%).
+
+**Pass rule.** The gate passes only if G1–G4 all pass. If any fails, stop: re-read the specification, fix the code, and say what changed. No pass range may be loosened after seeing results.
+
+**Indicative only (not part of the gate):** Thailand (VECMX\*(1,1), r = 1), whose GDP median at h = 4 should be positive (target +1.81); and the levels VARX\* version of every check.
+
+**Result:** not yet run.
 
 ## Open questions
 
-- [ ] User approval of D1.
 - [ ] Obtain the JIE 2017 version (tables may differ from WP/15/89).
-- [ ] Download the GVAR database (1979Q2–2023Q3) and check the Philippine variable list.
 - [ ] El Niño measure for the extension: SOI (as in the reference) or the Oceanic Niño Index (ONI) / relative ONI that NOAA now uses. Plan: SOI for replication; ONI as a robustness check.
-- [ ] Software: implement the GVAR in Python, or use the GVAR Toolbox (MATLAB) for the gate.
+- [ ] After the gate: the full 33-country GVAR remains an option if the Philippine-only approximation fails or a referee asks.
 - [ ] The pre-registered 2026–27 scenario must be frozen before the December 2026 to March 2027 drought peak.
